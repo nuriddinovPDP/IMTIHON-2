@@ -3,7 +3,6 @@ import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import SinglePage from "./pages/SinglePAge/SinglePAge";
-
 function App() {
   const router = createBrowserRouter([
     {
