@@ -10,7 +10,7 @@ export default function SinglePage() {
   const { id } = useParams();
   const [data, setData] = useState(null);
   useEffect(() => {
-    axios.get("./restaurant.json").then((res) => setData(res.data[0]));
+    axios.get("./restaurant.json").then((res) => setData(res.data[id]));
   }, []);
   console.log(data);
   return (
